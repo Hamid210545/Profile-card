@@ -1,0 +1,135 @@
+@font-face {
+    font-family: Kumbh Sans;
+    src: url(./KumbhSans-VariableFont_wght.ttf);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Kumbh Sans;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    background-color: hsl(185, 75%, 39%);
+    /* background-color: hsl(229, 23%, 23%);
+    background-color: hsl(227, 10%, 46%); */
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.container .top-left-pic {
+    width: 820px;
+    height: 820px;
+    position: absolute;
+    top: -50%;
+    left: -10%;
+    overflow: hidden;
+}
+
+.container .bottom-right-pic {
+    width: 850px;
+    height: 850px;
+    position: absolute;
+    bottom: -60%;
+    right: -10%;
+    overflow: hidden;
+}
+
+.container .card {
+    width: 380px;
+    background-color: #fff;
+    z-index: 1000;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+@media(max-width: 376px) {
+    .container .top-left-pic {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: -15%;
+        left: -25%;
+        overflow: hidden;
+    }
+
+    .container .bottom-right-pic {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        bottom: -15%;
+        right: -25%;
+        overflow: hidden;
+    }
+
+    .container .card {
+        width: 320px;
+    }
+}
+
+.card img {
+    width: 100%;
+    height: 40%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.card .name img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: -60px;
+    border: 7px solid #fff;
+    margin-bottom: 10px;
+}
+
+.card .name h2 {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.card .name p {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+.card .social-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+}
+
+.card .social-details .followers h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.card .social-details .followers p {
+    font-size: 1.4rem;
+    color: rgb(121, 120, 120);
+}
